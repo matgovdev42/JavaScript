@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Programa Base em JS</title>
+    <style>
+        body {
+            background-color: #65659a;
+            color: #ffe4c4;
+            font: normal 15pt arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Xô maldição</p>
+    <h2>Olá, <span id="nomeUsuario">visitante</span>!</h2>
+    <script>
+        window.alert('Minha Primeira Mensagem')
+        window.confirm('Continuar?')
+        const nome = window.prompt('Qual o seu nome?')
+        if (nome) {
+            document.getElementById('nomeUsuario').textContent = nome
+        }
+    </script>
+</body>
+</html>
