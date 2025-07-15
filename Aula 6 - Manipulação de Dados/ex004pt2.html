@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: 25pt arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        const nome = window.prompt('Qual o seu nome?')
+        let preco = parseFloat(window.prompt('Digite o Preço 1:'))
+        let preco2 = parseFloat(window.prompt('Digite o Preço 2:'))
+        let precoFinal = preco + preco2
+        let precoFormal = precoFinal.toFixed(2).replace('.', ',')
+        document.write(`Olá ${nome}, você digitou dois preços, sendo o valor a pagar R$: ${precoFormal}`)
+    </script>
+    
+</body>
+</html>
